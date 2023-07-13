@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}Редакция '{{ course.title }}'{% endblock title%}
+{% block content %}
+    <h1>Редакция '{{ course.title }}'</h1>
+    <div class="module">
+        <h2>Модули курса</h2>
+      <form method="post">
+        {{ formset }}
+        {{ formset.management_form }}
+        {% csrf_token %}
+        <input type="submit" value="Сохранить модули">
+      </form>
+      </div>
+{% endblock content %}

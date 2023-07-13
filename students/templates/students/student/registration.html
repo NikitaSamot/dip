@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}
+  Зарегистрироваться
+{% endblock title %}
+{% block content %}
+  <h1>Зарегистрироваться</h1>
+  <div class="module">
+    <p>Введите свои данные для создания учетной записи:</p>
+    <form  method="post">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="submit" value="Зарегистрироваться">
+    </form>
+  </div>
+{% endblock content %}

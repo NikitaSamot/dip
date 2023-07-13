@@ -1,0 +1,117 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 1,
+  "fields": {
+    "title": "music",
+    "slug": "music"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 2,
+  "fields": {
+    "title": "physics",
+    "slug": "physics"
+  }
+},
+{
+  "model": "courses.course",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "subject": 2,
+    "title": "fizika",
+    "slug": "fizika",
+    "overview": "dadadadada",
+    "created": "2023-07-09T17:19:17.416Z",
+    "students": []
+  }
+},
+{
+  "model": "courses.module",
+  "pk": 8,
+  "fields": {
+    "course": 4,
+    "title": "adada",
+    "description": "",
+    "order": 0
+  }
+},
+{
+  "model": "courses.content",
+  "pk": 10,
+  "fields": {
+    "module": 8,
+    "content_type": 10,
+    "object_id": 3,
+    "order": 0
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "title": "vffvwv",
+    "created": "2023-07-04T01:43:53.684Z",
+    "updated": "2023-07-04T01:43:53.684Z",
+    "content": "cdqacd"
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 4,
+  "fields": {
+    "owner": 1,
+    "title": "fsdf",
+    "created": "2023-07-04T01:56:53.211Z",
+    "updated": "2023-07-04T01:56:53.211Z",
+    "content": "dadad"
+  }
+},
+{
+  "model": "courses.text",
+  "pk": 5,
+  "fields": {
+    "owner": 1,
+    "title": "dasdadad",
+    "created": "2023-07-04T03:33:01.805Z",
+    "updated": "2023-07-04T03:33:01.805Z",
+    "content": "adadad"
+  }
+},
+{
+  "model": "courses.file",
+  "pk": 1,
+  "fields": {
+    "owner": 1,
+    "title": "dadadad",
+    "created": "2023-07-04T03:33:17.831Z",
+    "updated": "2023-07-04T03:33:17.831Z",
+    "file": "files/1._План_занятия_1-4.pdf"
+  }
+},
+{
+  "model": "courses.video",
+  "pk": 2,
+  "fields": {
+    "owner": 1,
+    "title": "Джон Уик в Resident Evil 4",
+    "created": "2023-07-09T16:50:27.661Z",
+    "updated": "2023-07-09T16:50:27.661Z",
+    "url": "https://www.youtube.com/watch?v=gHMnUeTRQl8"
+  }
+},
+{
+  "model": "courses.video",
+  "pk": 3,
+  "fields": {
+    "owner": 1,
+    "title": "adaddada",
+    "created": "2023-07-09T17:20:58.626Z",
+    "updated": "2023-07-09T17:20:58.626Z",
+    "url": "https://www.youtube.com/watch?v=gHMnUeTRQl8"
+  }
+}
+]
